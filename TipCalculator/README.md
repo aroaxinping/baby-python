@@ -8,7 +8,7 @@ Splits tips between people.
 - Round decimals properly
 - Use `.is_integer()` to format output
 
-## Smart Features
+## Smart Features I added
 ✨ Handles "15%" or "15" input  
 ✨ Removes ugly .0 from whole numbers (shows "5" not "5.0")  
 ✨ Cute welcome message!
