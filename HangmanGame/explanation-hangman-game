@@ -1,0 +1,63 @@
+import random
+
+# =============================================================================
+# CONFIGURACIÓN INICIAL DEL JUEGO
+# =============================================================================
+
+# Lista de palabras posibles (en un proyecto real, esto vendría de hangman_words.py)
+word_list = ["python", "programacion", "computadora", "juego", "codigo"]
+
+# Vidas iniciales: el jugador puede fallar 6 veces antes de perder
+lives = 6
+
+# Bandera (flag) para controlar cuándo termina el juego
+# False = el juego continúa, True = el juego termina
+game_over = False
+
+# Lista vacía para guardar las letras que el jugador ha adivinado CORRECTAMENTE
+# Ejemplo: si la palabra es "gato" y adivina "a", aquí se guarda ["a"]
+correct_letters = []
+
+# Lista vacía para guardar TODAS las letras que el jugador ha intentado
+# Esto evita que el jugador intente la misma letra dos veces
+guessed_letters = []
+
+
+# =============================================================================
+# ELEGIR LA PALABRA SECRETA
+# =============================================================================
+
+# random.choice() selecciona un elemento aleatorio de la lista
+chosen_word = random.choice(word_list)
+
+# IMPORTANTE: Comentar esta línea en el juego final (es trampa mostrar la palabra)
+print(f"[MODO PRUEBA] La palabra secreta es: {chosen_word}")
+
+
+# =============================================================================
+# CREAR EL DISPLAY INICIAL (guiones bajos)
+# =============================================================================
+
+# Multiplicar un string por un número lo repite esa cantidad de veces
+# Si chosen_word = "gato" (4 letras), entonces placeholder = "____"
+placeholder = "_" * len(chosen_word)
+print("Word to guess: " + placeholder)
+
+
+# =============================================================================
+# BUCLE PRINCIPAL DEL JUEGO
+# =============================================================================
+
+# Este bucle se repite mientras game_over sea False
+# Es decir, mientras el juego NO haya terminado
+while not game_over:
+
+    # -------------------------------------------------------------------------
+    # MOSTRAR INFORMACIÓN AL JUGADOR
+    # -------------------------------------------------------------------------
+    
+    # f-string permite insertar variables dentro de un string usando {}
+    print(f"\n****************************{lives}/6 LIVES LEFT****************************")
+    
+    # input() pide al usuario que escriba algo
+    # .lower() convierte todo a minúsc
