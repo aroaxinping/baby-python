@@ -160,4 +160,4 @@ for item in coleccion:
 
 ---
 
-💡 **Nota personal:** Este proyecto me enseñó la diferencia entre trabajar con listas y diccionarios, y cómo las funciones manejan variables. ¡La práctica hace al maestro!
+💡 **Nota personal:** Este proyecto me humilló lo suficiente como para aprender correctamente. Los diccionarios ganaron, yo perdí, pero ahora sé cómo funcionan (más o menos). Worth it.
