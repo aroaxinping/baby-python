@@ -255,11 +255,11 @@ calculator()
 
 Esta línea al final del archivo ejecuta la función `calculator()` por primera vez.
 
-## 🐛 Errores comunes que cometiste (y yo también 😅)
+## 🐛 ERRORES QUE COMETÍ
 
-### Error #1: Confusión con `input()` e `int()`
+### ❌Error #1: Confusión con `input()` e `int()`
 
-**❌ ERROR 1 de Mi código original:**
+**Mi código original:**
 ```python
 firstnumber = input(int("Type a number: "))
 ```
@@ -280,9 +280,9 @@ num1 = float(input("Type a number: "))
 1. `input()` ejecuta primero → devuelve un string
 2. `int()` o `float()` convierte ese string a número
 
-### Error #2: Operación hardcodeada
+### ❌Error #2: Operación hardcodeada
 
-**❌ ERROR 2 de Mi código original:**
+**Mi código original:**
 ```python
 result = operations["*"](n1=firstnumber, n2=secondnumber)
 ```
@@ -296,9 +296,9 @@ result = operations[do](firstnumber, secondnumber)
 
 Usas la variable `do` para seleccionar dinámicamente la operación.
 
-### Error #3: Lógica del bucle defectuosa
+### ❌Error #3: Lógica del bucle defectuosa
 
-**❌ ERROR 3 de Mi código original:**
+**Mi código original:**
 ```python
 while keepgoing == "Yes":
     result = firstnumber  # ¿Qué? Esto no tiene sentido
@@ -315,7 +315,7 @@ if keepgoing == "no":  # Este if nunca se ejecutará lógicamente
 3. El `if` después del `while` solo se ejecuta cuando sales del bucle
 4. Comparas con `"Yes"` (mayúscula) pero preguntas `"yes or no"` (minúscula)
 
-**✅ Solución de la profesora:**
+**✅ Solución:**
 ```python
 while should_accumulate:
     # ... código de cálculo ...
