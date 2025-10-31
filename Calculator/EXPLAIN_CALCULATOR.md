@@ -542,7 +542,7 @@ programa()  # Inicia
 ## 🎓 Lecciones filosóficas de programación
 
 ### 1. DRY (Don't Repeat Yourself)
-Si copias y pegas código, probablemente estás haciendo algo mal. Usa funciones o bucles.
+Usar funciones o bucles. 
 
 ### 2. Variables descriptivas
 `should_accumulate` es mejor que `sa` o `flag1`. Tu yo futuro te lo agradecerá.
@@ -558,6 +558,7 @@ Inicio → Pedir número → Loop → Calcular → ¿Continuar? → Sí: Reasign
 
 ---
 
+### Reflexiones finales 💭
 ### Lo que aprendií (después de sufrir un poco):
 
 1. **Los diccionarios pueden guardar funciones**, y eso es como tener superpoderes, pero también como tener un arma que no sabías que existía hasta que casi te disparas en el pie.
@@ -569,4 +570,50 @@ Inicio → Pedir número → Loop → Calcular → ¿Continuar? → Sí: Reasign
 4. **La recursión es magia negra hasta que lo entiendes**, y luego es magia blanca. Es como reiniciar tu computadora: borra todo y empiezas de nuevo. Solo que en este caso, el programa se reinicia a sí mismo como un fénix digital.
 
 5. **Los bucles con flags son como las relaciones**: necesitas una señal clara de cuándo seguir y cuándo es hora de parar. `should_accumulate` es más claro que `keepgoing == "Yes"` que comparas con un input en minúsculas (clásico bug de principiante que todos hemos cometido y nadie admite en público).
+
+
+### La dura verdad:
+
+Empecé este ejercicio con la inocente ilusión de "bueno, es una calculadora básica, yo creo que sabré hacerla". Terminé con un README de 500+ líneas explicándome a mí misma lcómo hacerla *bien*.
+
+**El orgullo:** ligeramente abollado.  
+**La confianza:** recalibrada.  
+**El conocimiento:** expandido.
+
+Mi código funcionaba. Hacía sumas, restas, multiplicaciones y divisiones como un campeón. El problema es que era el equivalente digital de una calculadora de bolsillo de los 90: hacía UNA operación y listo. Nada de "quiero seguir calculando con este resultado". Nada de loops elegantes. Nada de acumulación. Solo: calcula, muestra resultado, adiós.
+
+Ahora sí entiendo:
+- Por qué guardar **funciones en un diccionario** es brillante (y no brujería)
+- Que **`return`** no es decorativo, es esencial para que las funciones devuelvan valores
+- Cómo **reasignar variables** (`num1 = answer`) crea la magia de acumulación
+- Que los **loops con flags** son más elegantes que mi código lineal
+
+---
+
+### Epitafio para mi código original: 🪦
+
+*Aquí yace la calculadora básica*  
+*Funcionaba una vez y se despedía*  
+*Su intento de while loop vivía en negación constante*
+*Descanse en paz en el cementerio de errores de sintaxis*
+
+*Sin loops, sin acumulación, sin gloria*  
+*R.I.P. 2025* 🕊️
+
+---
+
+### Lección de hoy:
+
+A veces la solución es tan simple que tu cerebro se niega a aceptarla. `num1 = answer`. Eso era todo. Eso. Era. Todo.
+
+La diferencia entre código funcional y código útil es: ¿puede el usuario seguir trabajando sin empezar de cero cada vez?
+
+Mi código: "Hice tu suma. Ahora vete y vuelve si necesitas otra cosa."  
+Código de la profesora: "¿Quieres seguir? Perfecto, usa este resultado."
+
+---
+🏆 **Título obtenido:** Desarrollador de calculadoras con síndrome de amnesia (olvida el resultado anterior)  
+
+
+*Nos vemos en el próximo proyecto, donde mi código funcionará... pero le faltará algo que la profesora agregará en 3 líneas y me hará cuestionar mis decisiones de vida. El ciclo continúa.*
 
