@@ -574,16 +574,16 @@ Inicio → Pedir número → Loop → Calcular → ¿Continuar? → Sí: Reasign
 
 ### La dura verdad:
 
-Empecé este ejercicio con la inocente ilusión de "bueno, es una calculadora básica, yo creo que sabré hacerla". Terminé con un README de 500+ líneas explicándome a mí misma lcómo hacerla *bien*.
+Empecé este ejercicio con la inocente ilusión de "bueno, es una calculadora básica, yo creo que sabré hacerla". Terminé con un README de 500+ líneas explicándome a mí misma cómo hacerla *bien*.
 
 **El orgullo:** ligeramente abollado.  
 **La confianza:** recalibrada.  
 **El conocimiento:** expandido.
 
-Mi código funcionaba. Hacía sumas, restas, multiplicaciones y divisiones como un campeón. El problema es que era el equivalente digital de una calculadora de bolsillo de los 90: hacía UNA operación y listo. Nada de "quiero seguir calculando con este resultado". Nada de loops elegantes. Nada de acumulación. Solo: calcula, muestra resultado, adiós.
+Mi código funcionaba. Hacía sumas, restas, multiplicaciones y divisiones como un campeón. El problema es que era el equivalente digital de una calculadora de bolsillo de los 90: hacía UNA operación y listo. Nada de loops elegantes. Nada de acumulación. Solo: calcula, muestra resultado, adiós.
 
-Ahora sí entiendo:
-- Por qué guardar **funciones en un diccionario** es brillante (y no brujería)
+Ahora entiendo:
+- Por qué guardar **funciones en un diccionario** es brillante 
 - Que **`return`** no es decorativo, es esencial para que las funciones devuelvan valores
 - Cómo **reasignar variables** (`num1 = answer`) crea la magia de acumulación
 - Que los **loops con flags** son más elegantes que mi código lineal
@@ -595,6 +595,7 @@ Ahora sí entiendo:
 *Aquí yace la calculadora básica*  
 *Funcionaba una vez y se despedía*  
 *Su intento de while loop vivía en negación constante*
+
 *Descanse en paz en el cementerio de errores de sintaxis*
 
 *Sin loops, sin acumulación, sin gloria*  
@@ -615,5 +616,5 @@ Código de la profesora: "¿Quieres seguir? Perfecto, usa este resultado."
 🏆 **Título obtenido:** Desarrollador de calculadoras con síndrome de amnesia (olvida el resultado anterior)  
 
 
-*Nos vemos en el próximo proyecto, donde mi código funcionará... pero le faltará algo que la profesora agregará en 3 líneas y me hará cuestionar mis decisiones de vida. El ciclo continúa.*
+*Nos vemos en el próximo proyecto, donde mi código funcionará... pero probablemente le faltará algo que la profesora agregará en 3 líneas y me hará cuestionar mis decisiones de vida. El ciclo continúa.*
 
