@@ -259,7 +259,7 @@ Esta línea al final del archivo ejecuta la función `calculator()` por primera 
 
 ### Error #1: Confusión con `input()` e `int()`
 
-**❌ Tu código original:**
+**❌ ERROR 1 de Mi código original:**
 ```python
 firstnumber = input(int("Type a number: "))
 ```
@@ -282,7 +282,7 @@ num1 = float(input("Type a number: "))
 
 ### Error #2: Operación hardcodeada
 
-**❌ Tu código original:**
+**❌ ERROR 2 de Mi código original:**
 ```python
 result = operations["*"](n1=firstnumber, n2=secondnumber)
 ```
@@ -298,7 +298,7 @@ Usas la variable `do` para seleccionar dinámicamente la operación.
 
 ### Error #3: Lógica del bucle defectuosa
 
-**❌ Tu código original:**
+**❌ ERROR 3 de Mi código original:**
 ```python
 while keepgoing == "Yes":
     result = firstnumber  # ¿Qué? Esto no tiene sentido
@@ -332,7 +332,7 @@ while should_accumulate:
 - Reasigna `num1 = answer` para usar el resultado en la siguiente iteración
 - Usa recursión para reiniciar limpiamente
 
-### Error #4: No reasignar el primer número
+### ❌ERROR #4: No reasignar el primer número
 
 **El concepto clave que te faltaba:**
 
